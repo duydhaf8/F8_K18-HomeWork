@@ -1,10 +1,45 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Lab</title>
 </head>
 <body>
+<ul>
+    <li><a href="courses.html">Courses</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="submit.html">Submit</a></li>
+    <li><a href="contact.html">Contact</a></li>
+    <li><a href="../index.html">Main</a></li>
+</ul>
+<form action="lab.html" method="get">
+    <label for="search">Tìm kiếm</label>
+    <input id="search" type="text" name="q" placeholder="tìm kiếm">
+    <br>
+    <div>Level</div>
+    <label for="beginner">Beginner</label>
+    <input id="beginner" type="checkbox" value="Beginner" name="level">
+    <label for="intermediate">Intermediate</label>
+    <input id="intermediate" type="checkbox" value="Intermediate" name="level">
+    <label for="advanced">Advanced</label>
+    <input id="advanced" type="checkbox" value="Advanced" name="level">
+    <br>
+    <div>Method</div>
+    <label for="online">Online</label>
+    <input id="online" type="radio" name="mode" value="Online">
+    <label for="offline">Offline</label>
+    <input id="offline" type="radio" name="mode" value="Offline">
+    <br>
+    <select name="category">
+        <option value="Frontend">Frontend</option>
+        <option value="Backend">Backend</option>
+        <option value="DevOps">DevOps</option>
+    </select>
+    <input type="hidden" name="source" value="lab">
+    <br>
+    <input type="submit" value="Submit">
+    <input type="reset" value="Reset">
+</form>
 
 </body>
 </html>
