@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trung tâm cấu hình giao diện</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 0;
+            margin: 0;
+            background: #fafafa;
+        }
+
+        h1 {
+            background: #e67e22;
+            color: white;
+            padding: 14px 20px;
+            margin: 0 0 20px 0;
+        }
+
+        form {
+            padding: 0 20px 40px;
+        }
+
+        p {
+            margin: 10px 0 6px;
+            font-weight: 600;
+        }
+
+        .des p {
+            opacity: 0.25;
+            margin: 6px 0;
+            padding: 4px 8px;
+            border-radius: 4px;
+            transition: 0.25s;
+        }
+
+        label {
+            cursor: pointer;
+            padding: 2px 8px;
+            border-radius: 4px;
+            margin-right: 10px;
+            border: 1px solid transparent;
+            transition: 0.25s;
+        }
+
+        #theme-light:checked + label {
+            background: #ffeaa7;
+            color: #000;
+            border-color: #fdcb6e;
+        }
+        #theme-light:checked ~ .des .des-light {
+            opacity: 1;
+            background: #fff2bf;
+        }
+
+        #theme-dark:checked + label {
+            background: #2d3436;
+            color: #fff;
+            border-color: #000;
+        }
+        #theme-dark:checked ~ .des .des-dark {
+            opacity: 1;
+            background: #dfe6e9;
+        }
+
+        #color-red:checked + label {
+            background: #ff7675;
+            border-color: #d63031;
+            color: #000;
+        }
+        #color-red:checked ~ .des .des-red {
+            opacity: 1;
+            background: #ffd6d6;
+        }
+
+        #color-blue:checked + label {
+            background: #74b9ff;
+            border-color: #0984e3;
+        }
+        #color-blue:checked ~ .des .des-blue {
+            opacity: 1;
+            background: #d7eaff;
+        }
+
+        #color-green:checked + label {
+            background: #55efc4;
+            border-color: #00b894;
+        }
+        #color-green:checked ~ .des .des-green {
+            opacity: 1;
+            background: #d7fff1;
+        }
+
+        #lang-vi:checked + label {
+            background: #dfe6e9;
+            font-weight: bold;
+        }
+        #lang-vi:checked ~ .des .des-vi {
+            opacity: 1;
+            background: #fff;
+        }
+
+        #lang-en:checked + label {
+            background: #6c5ce7;
+            color: #fff;
+            font-weight: bold;
+        }
+        #lang-en:checked ~ .des .des-en {
+            opacity: 1;
+            background: #ece6ff;
+        }
+
+        #opt-adv:checked + label {
+            background: #81ecec;
+            border-color: #00cec9;
+        }
+        #opt-adv:checked ~ .des .desc-adv {
+            opacity: 1;
+            background: #e0ffff;
+        }
+
+        #opt-eco:checked + label {
+            background: #55efc4;
+            border-color: #00b894;
+        }
+        #opt-eco:checked ~ .des .desc-eco {
+            opacity: 1;
+            background: #d7fff1;
+        }
+
+        #opt-alert:checked + label {
+            background: #ff7675;
+            border-color: #d63031;
+            color: #fff;
+        }
+        #opt-alert:checked ~ .des .desc-alert {
+            opacity: 1;
+            background: #ffe0e0;
+        }
+
+    </style>
+
+</head>
+<body>
+<h1>Trung tâm cấu hình giao diện (Demo)</h1>
+<form>
+
+
+    <p>Chọn giao diện (Theme):</p>
+    <input type="radio" id="theme-light" name="theme">
+    <label for="theme-light">Light</label>
+    <input type="radio" id="theme-dark" name="theme">
+    <label for="theme-dark">Dark</label>
+
+    <p>Chọn màu chủ đạo (Color):</p>
+    <input type="radio" id="color-red" name="color">
+    <label for="color-red">Red</label>
+    <input type="radio" id="color-blue" name="color">
+    <label for="color-blue">Blue</label>
+    <input type="radio" id="color-green" name="color">
+    <label for="color-green">Green</label>
+
+    <p>Chọn ngôn ngữ (Language):</p>
+    <input type="radio" id="lang-vi" name="language">
+    <label for="lang-vi">VI</label>
+    <input type="radio" id="lang-en" name="language">
+    <label for="lang-en">EN</label>
+
+    <p>Tùy chọn bổ sung (Options - Checkbox):</p>
+    <input type="checkbox" id="opt-adv" name="options">
+    <label for="opt-adv">Hiển thị mô tả nâng cao</label>
+    <input type="checkbox" id="opt-eco" name="options">
+    <label for="opt-eco">Bật chế độ Eco</label>
+    <input type="checkbox" id="opt-alert" name="options">
+    <label for="opt-alert">Hiển thị cảnh báo quan trọng</label>
+
+    <div class="des">
+        <p class="des-light">
+            Theme Light: Giao diện sáng, chữ đen.
+        </p>
+        <p class="des-dark">
+            Theme Dark: Giao diện tối, chữ sáng.
+        </p>
+        <p class="des-red">
+            Màu Red: được nhấn mạnh khi chọn Red.
+        </p>
+        <p class="des-blue">
+            Màu Blue: được nhấn mạnh khi chọn Blue.
+        </p>
+        <p class="des-green">
+            Màu Green: được nhấn mạnh khi chọn Green.
+        </p>
+        <p class="des-vi">
+            [VI] Xin chào bạn! Khi chọn VI, dòng này rõ hơn.
+        </p>
+        <p class="des-en">
+            [EN] Hello, world! Khi chọn EN, dòng này rõ hơn.
+        </p>
+        <p class="desc-adv">
+            Mô tả nâng cao: giải thích kỹ hơn về cách các lựa chọn đang ảnh hưởng giao diện.
+        </p>
+        <p class="desc-eco">
+            Chế độ Eco: mô phỏng trạng thái tiết kiệm tài nguyên cho giao diện.
+        </p>
+        <p class="desc-alert">
+            Cảnh báo quan trọng: khu vực dùng để nhấn mạnh thông tin hệ thống.
+        </p>
+    </div>
+</form>
+</body>
+</html>
