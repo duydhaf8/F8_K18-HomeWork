@@ -76,7 +76,7 @@ ul li a {
     color: #d62828;
 }
 
-.news:hover > .dropdown-1 {
+.menu:hover > .dropdown-1 {
     display: block;
 }
 
@@ -92,11 +92,11 @@ ul li a {
     color: #d62828;
 }
 
-.news {
+.menu {
     position: relative;
 }
 
-.arrow {
+.menu-arrow {
     position: absolute;
     top: 1.5rem;
     right: -0.2rem;
@@ -104,7 +104,7 @@ ul li a {
     border-style: solid;
     border-color: #555555 transparent transparent transparent;
 }
-.arrow-left {
+.menu-arrow-left {
     position: absolute;
     top: 0.8rem;
     left: 10rem;
@@ -113,7 +113,7 @@ ul li a {
     border-color:  transparent transparent transparent #555555;
 }
 
-.news:hover > a {
+.menu:hover > a {
     color: #d62828;
     padding-bottom: 0.8rem;
     border-width: 0 0 1rem 0;
