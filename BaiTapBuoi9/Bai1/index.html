@@ -2,8 +2,8 @@
 <html lang="vi">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trung tâm cấu hình giao diện</title>
+
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -25,9 +25,9 @@
 
         p {
             margin: 10px 0 6px;
-            font-weight: 600;
         }
 
+        /* Mặc định mô tả nhạt */
         .des p {
             opacity: 0.25;
             margin: 6px 0;
@@ -36,6 +36,7 @@
             transition: 0.25s;
         }
 
+        /* Label nút chọn */
         label {
             cursor: pointer;
             padding: 2px 8px;
@@ -45,6 +46,7 @@
             transition: 0.25s;
         }
 
+        /* ------------- THEME ------------- */
         #theme-light:checked + label {
             background: #ffeaa7;
             color: #000;
@@ -59,12 +61,15 @@
             background: #2d3436;
             color: #fff;
             border-color: #000;
+
         }
         #theme-dark:checked ~ .des .des-dark {
             opacity: 1;
-            background: #dfe6e9;
+            background: rgba(0, 0, 0, 0.84);
+            color: #fff;
         }
 
+        /* ------------- COLOR ------------- */
         #color-red:checked + label {
             background: #ff7675;
             border-color: #d63031;
@@ -73,6 +78,7 @@
         #color-red:checked ~ .des .des-red {
             opacity: 1;
             background: #ffd6d6;
+            color: #d62828;
         }
 
         #color-blue:checked + label {
@@ -82,6 +88,7 @@
         #color-blue:checked ~ .des .des-blue {
             opacity: 1;
             background: #d7eaff;
+            color: #096dd9;
         }
 
         #color-green:checked + label {
@@ -91,8 +98,10 @@
         #color-green:checked ~ .des .des-green {
             opacity: 1;
             background: #d7fff1;
+            color: #009688;
         }
 
+        /* ---------- LANGUAGE ---------- */
         #lang-vi:checked + label {
             background: #dfe6e9;
             font-weight: bold;
@@ -112,41 +121,39 @@
             background: #ece6ff;
         }
 
+        /* -------- OPTIONS (checkbox) -------- */
         #opt-adv:checked + label {
-            background: #81ecec;
-            border-color: #00cec9;
+            background: rgba(253, 152, 62, 0.73);
         }
         #opt-adv:checked ~ .des .desc-adv {
             opacity: 1;
-            background: #e0ffff;
+            background: rgba(253, 152, 62, 0.73);
         }
 
         #opt-eco:checked + label {
-            background: #55efc4;
-            border-color: #00b894;
+            background-color: rgba(39, 250, 39, 0.68);
         }
         #opt-eco:checked ~ .des .desc-eco {
             opacity: 1;
-            background: #d7fff1;
+            background-color: rgba(39, 250, 39, 0.68);
         }
 
         #opt-alert:checked + label {
-            background: #ff7675;
-            border-color: #d63031;
-            color: #fff;
+            background-color: #d7eaff;
         }
         #opt-alert:checked ~ .des .desc-alert {
             opacity: 1;
-            background: #ffe0e0;
+            background-color: #d7eaff;
+
         }
 
     </style>
-
 </head>
+
 <body>
 <h1>Trung tâm cấu hình giao diện (Demo)</h1>
-<form>
 
+<form>
 
     <p>Chọn giao diện (Theme):</p>
     <input type="radio" id="theme-light" name="theme">
@@ -177,37 +184,18 @@
     <label for="opt-alert">Hiển thị cảnh báo quan trọng</label>
 
     <div class="des">
-        <p class="des-light">
-            Theme Light: Giao diện sáng, chữ đen.
-        </p>
-        <p class="des-dark">
-            Theme Dark: Giao diện tối, chữ sáng.
-        </p>
-        <p class="des-red">
-            Màu Red: được nhấn mạnh khi chọn Red.
-        </p>
-        <p class="des-blue">
-            Màu Blue: được nhấn mạnh khi chọn Blue.
-        </p>
-        <p class="des-green">
-            Màu Green: được nhấn mạnh khi chọn Green.
-        </p>
-        <p class="des-vi">
-            [VI] Xin chào bạn! Khi chọn VI, dòng này rõ hơn.
-        </p>
-        <p class="des-en">
-            [EN] Hello, world! Khi chọn EN, dòng này rõ hơn.
-        </p>
-        <p class="desc-adv">
-            Mô tả nâng cao: giải thích kỹ hơn về cách các lựa chọn đang ảnh hưởng giao diện.
-        </p>
-        <p class="desc-eco">
-            Chế độ Eco: mô phỏng trạng thái tiết kiệm tài nguyên cho giao diện.
-        </p>
-        <p class="desc-alert">
-            Cảnh báo quan trọng: khu vực dùng để nhấn mạnh thông tin hệ thống.
-        </p>
+        <p class="des-light">Theme Light: Giao diện sáng, chữ đen.</p>
+        <p class="des-dark">Theme Dark: Giao diện tối, chữ sáng.</p>
+        <p class="des-red">Màu Red: được nhấn mạnh khi chọn Red.</p>
+        <p class="des-blue">Màu Blue: được nhấn mạnh khi chọn Blue.</p>
+        <p class="des-green">Màu Green: được nhấn mạnh khi chọn Green.</p>
+        <p class="des-vi">[VI] Xin chào bạn! Khi chọn VI, dòng này rõ hơn.</p>
+        <p class="des-en">[EN] Hello, world! Khi chọn EN, dòng này rõ hơn.</p>
+        <p class="desc-adv">Mô tả nâng cao: giải thích kỹ hơn về cách các lựa chọn đang ảnh hưởng giao diện.</p>
+        <p class="desc-eco">Chế độ Eco: mô phỏng trạng thái tiết kiệm tài nguyên cho giao diện.</p>
+        <p class="desc-alert">Cảnh báo quan trọng: khu vực dùng để nhấn mạnh thông tin hệ thống.</p>
     </div>
+
 </form>
 </body>
 </html>
