@@ -158,8 +158,11 @@ h1 {
 }
 
 .benefit-item {
-    margin: 1.875rem 0;
     display: inline-block;
+    width: 30%;
+    margin: 0 1%;
+    vertical-align: middle;
+    text-align: left;
 }
 
 .benefit-item img {
