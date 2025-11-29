@@ -2,9 +2,134 @@
 <html lang="vi">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Các hình tạo bằng Border</title>
+
+    <style>
+        .shape {
+            margin: 20px;
+            display: inline-block;
+        }
+
+        .square {
+            width: 60px;
+            height: 60px;
+            border: 5px solid #E24E2A;
+        }
+
+        .rectangle {
+            width: 100px;
+            height: 60px;
+            border: 5px solid #4B84E0;
+        }
+
+        .tri-up {
+            width: 0;
+            height: 0;
+            border-left: 40px solid transparent;
+            border-right: 40px solid transparent;
+            border-bottom: 70px solid #5FC977;
+        }
+
+        .tri-down {
+            width: 0;
+            height: 0;
+            border-left: 40px solid transparent;
+            border-right: 40px solid transparent;
+            border-top: 70px solid #E69A00;
+        }
+
+        .tri-left {
+            width: 0;
+            height: 0;
+            border-top: 40px solid transparent;
+            border-bottom: 40px solid transparent;
+            border-right: 70px solid #8C54C6;
+        }
+
+        .tri-right {
+            width: 0;
+            height: 0;
+            border-top: 40px solid transparent;
+            border-bottom: 40px solid transparent;
+            border-left: 70px solid #D57B27;
+        }
+
+        .trapezoid {
+            width: 120px;
+            border-bottom: 60px solid #5EB79D;
+            border-left: 25px solid transparent;
+            border-right: 25px solid transparent;
+            height: 0;
+        }
+
+        .tri-wide {
+            width: 0;
+            height: 0;
+            border-left: 100px solid transparent;
+            border-right: 100px solid transparent;
+            border-bottom: 70px solid #2B3D52;
+        }
+
+        .tri-sharp {
+            width: 0;
+            height: 0;
+            border-left: 25px solid transparent;
+            border-right: 25px solid transparent;
+            border-bottom: 100px solid #B54421;
+        }
+
+        .tri-isos {
+            width: 0;
+            height: 0;
+            border-left: 50px solid transparent;
+            border-right: 50px solid transparent;
+            border-bottom: 70px solid #C05700;
+        }
+
+        .arrow-right {
+            width: 0;
+            height: 0;
+            border-top: 45px solid transparent;
+            border-bottom: 45px solid transparent;
+            border-left: 75px solid #4EA787;
+        }
+
+        .arrow-left {
+            width: 0;
+            height: 0;
+            border-top: 45px solid transparent;
+            border-bottom: 45px solid transparent;
+            border-right: 75px solid #834EC8;
+        }
+
+        .ribbon {
+            width: 100px;
+            height: 50px;
+            border-top: 50px solid #D85A3B;
+            border-right: 50px solid transparent;
+        }
+
+    </style>
+
 </head>
 <body>
+
+
+<div class="shape square"></div>
+<div class="shape rectangle"></div>
+<div class="shape tri-up"></div>
+<div class="shape tri-down"></div>
+<div class="shape tri-left"></div>
+<div class="shape tri-right"></div>
+<div class="shape trapezoid"></div>
+<div class="shape tri-wide"></div>
+<div class="shape tri-sharp"></div>
+<div class="shape tri-isos"></div>
+<div class="shape arrow-right"></div>
+<div class="shape arrow-left"></div>
+<div class="shape ribbon">chịu:)</div>
+<div>f8 chịu:)</div>
+
 
 </body>
 </html>
