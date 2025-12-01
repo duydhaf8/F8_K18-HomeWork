@@ -118,11 +118,6 @@ body {
     color: #a855f7;
 }
 
-.nav-item:hover .arrow-down {
-    border-top-color: #a855f7;
-    transform: translateY(1px) rotate(180deg);
-}
-
 .dropdown-menu {
     position: absolute;
     background: white;
