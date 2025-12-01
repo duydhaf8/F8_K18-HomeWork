@@ -47,16 +47,11 @@ body {
     width: 3rem;
     height: 3rem;
     border-radius: 50%;
-    background: linear-gradient(135deg, #f05123, #ef4444);
-    color: white;
-    font-size: 1.5rem;
-    font-weight: 700;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    object-fit: cover;
     margin-left: 0.25rem;
     cursor: pointer;
     flex-shrink: 0;
+    display: block;
 }
 
 .header-nav {
