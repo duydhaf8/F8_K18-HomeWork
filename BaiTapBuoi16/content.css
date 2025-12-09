@@ -411,7 +411,7 @@
 }
 
 .frequently-content-card-header-open {
-    background-image: url("./icon/Button (2).png");
+    background-image: url("icon/Button+.png");
     width: 52px;
     height: 52px;
     background-repeat: no-repeat;
@@ -421,7 +421,7 @@
 
 .frequently-content-card-header-close {
     display: none;
-    background-image: url("./icon/Button.png");
+    background-image: url("icon/ButtonX.png");
     width: 52px;
     height: 52px;
     background-repeat: no-repeat;
@@ -464,7 +464,7 @@
 .frequently-content-card-menu-btn button {
     border-radius: 100px;
     padding: 14px;
-    background-image: url("./icon/Vector.png");
+    background-image: url("icon/Right.png");
     background-repeat: no-repeat;
     background-position: center;
     background-color: #FFFFFF;
