@@ -40,15 +40,12 @@
     margin-top: 14px;
 }
 
-.footer-social-icon a {
-    margin-right: 14px;
-}
-
-.footer-social-icon a img {
+.footer-social-icon img {
     border-radius: 8px;
     border: 1px solid #f1f1f3;
     padding: 14px;
     background-color: #F7F7F8;
+    margin-right: 14px;
 }
 
 footer {
