@@ -361,7 +361,7 @@
 }
 
 
-.frequently {
+.faq {
     display: flex;
     margin-top: 150px;
     border-radius: 12px;
@@ -370,23 +370,23 @@
 }
 
 
-.frequently-header {
+.faq-header {
     margin-right: 120px;
 }
 
-.frequently-header span {
+.faq-header span {
     font-size: 48px;
     font-weight: 600;
     line-height: 120%;
     color: #262626;
 }
 
-.frequently-header p {
+.faq-header p {
     color: #333333;
     margin-top: 10px;
 }
 
-.frequently-header button {
+.faq-header button {
     border-radius: 8px;
     border: 1px solid #f1f1f3;
     background-color: #FFFFFF;
@@ -397,11 +397,11 @@
 }
 
 
-.frequently-content {
+.faq-content {
     width: 100%;
 }
 
-.frequently-content-card {
+.faq-content-card {
     display: flex;
     flex-direction: column;
     border-radius: 12px;
@@ -412,25 +412,25 @@
     margin-bottom: 30px;
 }
 
-.frequently-content-card:last-child {
+.faq-content-card:last-child {
     margin: 0;
 }
 
 
-.frequently-content-card-header {
+.faq-content-card-header {
     display: flex;
     align-items: center;
     width: 100%;
 }
 
-.frequently-content-card-header h5 {
+.faq-content-card-header h5 {
     width: 100%;
     font-size: 20px;
     font-weight: 500;
     margin-right: 30px;
 }
 
-.frequently-content-card-header-open {
+.faq-content-card-header-open {
     background-image: url("icon/Button+.png");
     width: 52px;
     height: 52px;
@@ -439,7 +439,7 @@
     border: none;
 }
 
-.frequently-content-card-header-close {
+.faq-content-card-header-close {
     display: none;
     background-image: url("icon/ButtonX.png");
     width: 52px;
@@ -450,16 +450,16 @@
 }
 
 
-.frequently-content-card-menu {
+.faq-content-card-menu {
     display: none;
 }
 
-.frequently-content-card-menu p {
+.faq-content-card-menu p {
     margin-top: 50px;
     color: #4C4C4D;
 }
 
-.frequently-content-card-menu-btn {
+.faq-content-card-menu-btn {
     display: flex;
     align-items: center;
     border: 1px solid #f1f1f3;
@@ -469,13 +469,13 @@
     margin-top: 50px;
 }
 
-.frequently-content-card-menu-btn h5 {
+.faq-content-card-menu-btn h5 {
     font-weight: 500;
     color: #333333;
     width: 100%;
 }
 
-.frequently-content-card-menu-btn button {
+.faq-content-card-menu-btn button {
     border-radius: 100px;
     padding: 14px;
     background-image: url("icon/Right.png");
@@ -488,20 +488,20 @@
 }
 
 
-input[type="checkbox"]:checked ~ .frequently-content-card-header .frequently-content-card-header-open {
+input[type="checkbox"]:checked ~ .faq-content-card-header .faq-content-card-header-open {
     display: none;
 }
 
-input[type="checkbox"]:checked ~ .frequently-content-card-header {
+input[type="checkbox"]:checked ~ .faq-content-card-header {
     border-bottom: 1px solid #F1F1F3;
     padding-bottom: 24px;
 }
 
-input[type="checkbox"]:checked ~ .frequently-content-card-header .frequently-content-card-header-close {
+input[type="checkbox"]:checked ~ .faq-content-card-header .faq-content-card-header-close {
     display: flex;
 }
 
-input[type="checkbox"]:checked ~ .frequently-content-card-menu {
+input[type="checkbox"]:checked ~ .faq-content-card-menu {
     display: block;
 }
 
