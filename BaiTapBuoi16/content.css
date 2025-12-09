@@ -1,3 +1,4 @@
+
 .benefits {
     margin-top: 150px;
 }
@@ -5,6 +6,7 @@
 .benefits-content {
     margin-top: 80px;
 }
+
 
 .benefits-card-top {
     display: flex;
@@ -14,6 +16,7 @@
     display: flex;
     margin-top: 20px;
 }
+
 
 .benefits-card {
     display: flex;
@@ -29,6 +32,7 @@
     margin-left: 20px;
     margin-right: 20px;
 }
+
 
 .benefits-card-number {
     display: flex;
@@ -56,7 +60,6 @@
 .benefits-card-icon {
     display: flex;
     justify-content: flex-end;
-
     margin-top: 50px;
 }
 
@@ -68,6 +71,7 @@
     border: 1px solid #f1f1f3;
     background-color: #fcfcfd;
 }
+
 
 .our-courses {
     margin-top: 100px;
@@ -81,6 +85,7 @@
     display: flex;
     margin-top: 30px;
 }
+
 
 .our-courses-card {
     width: 785px;
@@ -98,6 +103,18 @@
     width: 100%;
     object-fit: cover;
 }
+
+.our-courses-card button {
+    margin-top: 30px;
+    border-radius: 8px;
+    border: 1px solid #f1f1f3;
+    background-color: #f7f7f8;
+    padding: 18px 24px;
+    width: 100%;
+    font-weight: 500;
+    color: #262626;
+}
+
 
 .our-courses-card-title {
     display: flex;
@@ -138,16 +155,6 @@
     color: #4c4c4d;
 }
 
-.our-courses-card button {
-    margin-top: 30px;
-    border-radius: 8px;
-    border: 1px solid #f1f1f3;
-    background-color: #f7f7f8;
-    padding: 18px 24px;
-    width: 100%;
-    font-weight: 500;
-    color: #262626;
-}
 
 .our-testimonials {
     margin-top: 108px;
@@ -156,6 +163,15 @@
 .our-testimonials-content {
     margin-top: 80px;
 }
+
+.our-testimonials-items {
+    display: flex;
+}
+
+.our-testimonials-items:last-child {
+    margin-top: 30px;
+}
+
 
 .our-testimonials-card {
     border: 1px solid #f1f1f3;
@@ -174,6 +190,7 @@
     border-bottom: 1px solid #f1f1f3;
 }
 
+
 .our-testimonials-card-content {
     display: flex;
     align-items: center;
@@ -182,16 +199,16 @@
     background-color: #fcfcfd;
 }
 
-.our-testimonials-card-content-avatar span {
-    font-weight: 600;
-    color: #333333;
-    margin-left: 15px;
-}
-
 .our-testimonials-card-content-avatar {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.our-testimonials-card-content-avatar span {
+    font-weight: 600;
+    color: #333333;
+    margin-left: 15px;
 }
 
 .our-testimonials-card-content button {
@@ -203,17 +220,11 @@
     color: #262626;
 }
 
-.our-testimonials-items {
-    display: flex;
-}
-
-.our-testimonials-items:last-child {
-    margin-top: 30px;
-}
 
 .our-pricing {
     margin-top: 168px;
 }
+
 
 .header-btn-pricing {
     background-color: #fff;
@@ -246,6 +257,7 @@
     background-color: #fff;
 }
 
+
 .our-pricing-card {
     border-radius: 12px;
     border: 1px solid #f1f1f3;
@@ -256,6 +268,18 @@
 .our-pricing-card:first-child {
     margin-right: 30px;
 }
+
+.our-pricing-card button {
+    border: 1px solid #f1f1f3;
+    background-color: #ff9500;
+    padding: 20px 24px;
+    width: 100%;
+    font-weight: 600;
+    color: #ffffff;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
 
 .our-pricing-card-title {
     font-size: 22px;
@@ -287,6 +311,7 @@
     color: #262626;
     line-height: 73%;
 }
+
 
 .our-pricing-card-content {
     margin-top: 50px;
@@ -324,28 +349,18 @@
     color: #4c4c4d;
 }
 
-.our-pricing-card-content ul li span {
-    width: 100%;
-}
-
 .our-pricing-card-content ul li:last-child {
     margin: 0;
+}
+
+.our-pricing-card-content ul li span {
+    width: 100%;
 }
 
 .our-pricing-card-content ul li img {
     margin-right: 12px;
 }
 
-.our-pricing-card button {
-    border: 1px solid #f1f1f3;
-    background-color: #ff9500;
-    padding: 20px 24px;
-    width: 100%;
-    font-weight: 600;
-    color: #ffffff;
-    border-bottom-left-radius: 8px;
-    border-bottom-right-radius: 8px;
-}
 
 .frequently {
     display: flex;
@@ -355,10 +370,10 @@
     background-color: #fff;
 }
 
+
 .frequently-header {
     margin-right: 120px;
 }
-
 
 .frequently-header span {
     font-size: 48px;
@@ -382,6 +397,7 @@
     font-weight: 500;
 }
 
+
 .frequently-content {
     width: 100%;
 }
@@ -401,13 +417,18 @@
     margin: 0;
 }
 
+
 .frequently-content-card-header {
-    /*border-bottom: 1px solid #F1F1F3;*/
     display: flex;
     align-items: center;
-    /*padding-bottom: 24px;*/
     width: 100%;
+}
 
+.frequently-content-card-header h5 {
+    width: 100%;
+    font-size: 20px;
+    font-weight: 500;
+    margin-right: 30px;
 }
 
 .frequently-content-card-header-open {
@@ -429,12 +450,6 @@
     border: none;
 }
 
-.frequently-content-card-header h5 {
-    width: 100%;
-    font-size: 20px;
-    font-weight: 500;
-    margin-right: 30px;
-}
 
 .frequently-content-card-menu {
     display: none;
@@ -473,6 +488,7 @@
     border: none;
 }
 
+
 input[type="checkbox"]:checked ~ .frequently-content-card-header .frequently-content-card-header-open {
     display: none;
 }
@@ -487,9 +503,9 @@ input[type="checkbox"]:checked ~ .frequently-content-card-header .frequently-con
 }
 
 input[type="checkbox"]:checked ~ .frequently-content-card-menu {
-
     display: block;
 }
+
 
 .info-item {
     display: flex;
@@ -501,4 +517,3 @@ input[type="checkbox"]:checked ~ .frequently-content-card-menu {
 .info-item i {
     margin-right: 6px;
 }
-
