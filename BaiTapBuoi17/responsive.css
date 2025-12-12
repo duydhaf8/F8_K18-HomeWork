@@ -1,0 +1,357 @@
+#sidebar-active,
+.responsive-menu,
+.responsive-our-courses-card,
+.responsive-course-header-top {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    .main {
+        max-width: 95%;
+    }
+
+    .header-nav-left ul,
+    .hero-section,
+    .benefits,
+    .our-courses .header,
+    .our-courses-card {
+        display: none;
+    }
+
+    .header-nav-right {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        width: 100%;
+    }
+
+    .open-sidebar-button {
+        font-size: 30px;
+        cursor: pointer;
+        display: block;
+        margin-right: 20px;
+        margin-left: 10px;
+        color: #262626;
+    }
+
+    .responsive-menu {
+        display: block;
+    }
+
+    .links-container {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        position: fixed;
+        top: 0;
+        right: -100%;
+        z-index: 999;
+        width: 90%;
+        height: 100%;
+        background-color: white;
+        padding: 0;
+    }
+
+    .sidebar-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        padding: 20px 30px;
+        border-bottom: 1px solid #f1f1f3;
+        background-color: #fff;
+    }
+
+    .sidebar-logo {
+        width: 45px;
+        height: auto;
+    }
+
+    .close-sidebar-button {
+        font-size: 35px;
+        cursor: pointer;
+        color: #262626;
+        line-height: 1;
+        padding: 0 5px;
+    }
+
+    .links-container a {
+        box-sizing: border-box;
+        width: 100%;
+        padding: 20px 30px;
+        text-decoration: none;
+        color: #262626;
+        font-weight: 500;
+        display: block;
+        transition: background-color 0.2s;
+        text-align: center;
+    }
+
+    .links-container a:hover {
+        background-color: #fcfcfd;
+        color: #ff9500;
+    }
+
+    #sidebar-active:checked ~ .links-container {
+        right: 0;
+    }
+
+    #overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: 998;
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity 0.3s ease-in-out;
+    }
+
+    #sidebar-active:checked ~ #overlay {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .responsive-our-courses-card {
+        display: flex;
+        flex-direction: column;
+        background-color: #fff;
+        border-radius: 12px;
+        padding: 20px;
+        border: 1px solid #f1f1f3;
+        width: 100%;
+        margin-bottom: 30px;
+        box-sizing: border-box;
+    }
+
+    .responsive-course-header-top {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .responsive-course-header-top h3 {
+        font-size: 30px;
+        font-weight: 700;
+        color: #262626;
+        margin-bottom: 10px;
+    }
+
+    .responsive-course-header-top p {
+        color: #4c4c4d;
+        font-size: 20px;
+        line-height: 1.5;
+    }
+
+    .responsive-btn-view-course {
+        display: inline-block;
+        padding: 12px 20px;
+        background-color: #f7f7f8;
+        border: 1px solid #f1f1f3;
+        border-radius: 8px;
+        font-weight: 500;
+        color: #262626;
+        cursor: pointer;
+        width: 20%;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+
+    .responsive-course-gallery {
+        display: flex;
+        justify-content: space-between;
+        gap: 10px;
+        margin-bottom: 20px;
+    }
+
+    .responsive-course-gallery img {
+        width: 32%;
+        height: 80px;
+        object-fit: cover;
+        border-radius: 6px;
+    }
+
+    .responsive-course-meta-info {
+        margin-bottom: 30px;
+    }
+
+    .responsive-course-tags {
+        display: flex;
+        gap: 10px;
+        margin-bottom: 15px;
+        flex-wrap: wrap;
+    }
+
+    .responsive-course-tags span {
+        padding: 8px 14px;
+        border: 1px solid #f1f1f3;
+        border-radius: 6px;
+        color: #4c4c4d;
+        font-size: 14px;
+        background-color: #fff;
+    }
+
+    .responsive-course-author {
+        font-size: 16px;
+        font-weight: 600;
+        color: #262626;
+    }
+
+    .responsive-course-curriculum {
+        border: 1px solid #f1f1f3;
+        border-radius: 12px;
+        background-color: #fff;
+        overflow: hidden;
+    }
+
+    .responsive-course-curriculum h4 {
+        font-size: 18px;
+        font-weight: 600;
+        color: #262626;
+        padding: 20px;
+        border-bottom: 1px solid #f1f1f3;
+        margin: 0;
+    }
+
+    .responsive-curriculum-list {
+        padding: 0 20px 20px 20px;
+    }
+
+    .responsive-curriculum-item {
+        display: flex;
+        flex-direction: column;
+        padding: 15px 0;
+        border-bottom: 1px solid #f1f1f3;
+    }
+
+    .responsive-curriculum-item:last-child {
+        border-bottom: none;
+        padding-bottom: 0;
+    }
+
+    .responsive-curr-number {
+        font-size: 36px;
+        font-weight: 800;
+        color: #262626;
+        margin-bottom: 5px;
+        line-height: 1;
+    }
+
+    .responsive-curr-title {
+        font-size: 15px;
+        color: #4c4c4d;
+        font-weight: 500;
+    }
+
+    .our-testimonials .header,
+    .our-pricing .header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+    }
+
+    .header-btn {
+        margin-left: 0;
+        width: 100%;
+    }
+
+    .our-testimonials {
+        margin-top: 50px;
+    }
+
+    .our-testimonials-items {
+        flex-direction: column;
+    }
+
+    .our-testimonials-card {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 30px;
+    }
+
+    .our-testimonials-card p {
+        padding: 20px;
+    }
+
+    .our-testimonials-card-content {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .our-testimonials-card-content button {
+        width: 100%;
+    }
+
+    .our-pricing {
+        margin-top: 50px;
+    }
+
+    .header-btn-pricing {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .our-pricing-content {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .our-pricing-card {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 30px;
+    }
+
+    .our-pricing-card-price strong {
+        font-size: 50px;
+    }
+
+    .faq {
+        flex-direction: column;
+        padding: 30px;
+        margin-top: 50px;
+    }
+
+    .faq-header {
+        margin-right: 0;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+
+    .faq-header span {
+        font-size: 32px;
+    }
+
+    .faq-header button {
+        width: 100%;
+    }
+
+    footer {
+        padding: 50px 20px;
+        margin-top: 50px;
+    }
+
+    .footer-content {
+        flex-direction: column;
+    }
+
+    .footer-content-right {
+        margin-top: 40px;
+        flex-direction: column;
+    }
+
+    .footer-content-right-home {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .footer-content-right-home ul {
+        width: 100%;
+        margin-right: 0;
+    }
+}
