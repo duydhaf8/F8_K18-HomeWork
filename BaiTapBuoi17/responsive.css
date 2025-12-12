@@ -5,7 +5,7 @@
     display: none;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 390px) {
     .main {
         max-width: 95%;
     }
