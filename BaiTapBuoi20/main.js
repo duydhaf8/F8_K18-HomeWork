@@ -49,6 +49,7 @@ number = String(number);
 string = Number(string);
 boolean = String(boolean);
 console.log(number, string, boolean);
+console.log(typeof number, typeof string, typeof boolean);
 
 // Part 5
 // Boolean(0): false
