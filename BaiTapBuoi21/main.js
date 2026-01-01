@@ -48,7 +48,6 @@ myLaptop.brand = "Apple";
 const mySpec = laptop.spec;
 mySpec.ram = "16GB";
 
-console.log(laptop);
 console.log(laptop.brand);
 console.log(laptop.spec.ram);
 // because laptop.brand and myLaptop.brand, laptop.spec.ram and mySpec.ram refer to the same Memory Address.
