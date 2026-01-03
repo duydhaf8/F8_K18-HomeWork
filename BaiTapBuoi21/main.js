@@ -26,10 +26,10 @@ console.log("Part 3");
 let age = 9;
 let mathScore = 10;
 let isVip = false;
-let canEnter = (age >= 10 && mathScore >= 7) || isVip;
+let canEnter = (age >= 10 && mathScore > 7) || isVip;
 console.log(canEnter);
 isVip = true;
-canEnter = (age >= 10 && mathScore >= 7) || isVip;
+canEnter = (age >= 10 && mathScore > 7) || isVip;
 console.log(canEnter);
 // Logic Question: Is !(age < 10) mathematically the same as age >= 10?
 // ==> Yes
@@ -50,6 +50,8 @@ mySpec.ram = "16GB";
 
 console.log(laptop.brand);
 console.log(laptop.spec.ram);
+// brand: Apple
+// ram: 16GB
 // because laptop.brand and myLaptop.brand, laptop.spec.ram and mySpec.ram refer to the same Memory Address.
 
 
