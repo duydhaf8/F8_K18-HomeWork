@@ -83,7 +83,7 @@ console.log("Part 6");
 function calculateElectricityBill(electricity) {
     if (electricity < 0) {
         return "Invalid value";
-    } if (electricity <= 50) {
+    } else if (electricity <= 50) {
         return electricity * 1678;
     } else if (electricity <= 100) {
         return 50 * 1678 + (electricity - 50) * 1734;
