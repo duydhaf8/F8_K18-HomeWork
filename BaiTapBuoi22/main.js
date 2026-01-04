@@ -4,7 +4,7 @@ console.log("Part 1");
 function classifyStudent(studentScore) {
     // if (studentScore < 0 || studentScore > 10) {
     //     return "Invalid score";
-    // } else if (studentScore >= 9 && studentScore <= 10) {
+    // } else if (studentScore >= 9) {
     //     return "Excellent";
     // } else if (studentScore >= 8) {
     //     return "Very Good";
