@@ -70,7 +70,7 @@ console.log(result);
 
 // Part 4
 console.log("Part 4");
-;
+
 function getTicketPriceByAge(ticketPrice, age) {
     const finalPrice = age < 13 ? ticketPrice * 0.5 : ticketPrice;
     return finalPrice;
