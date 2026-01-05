@@ -44,20 +44,20 @@ function daysInMonth(month) {
         case 8:
         case 10:
         case 12:
-            return "31 days";
+            return 31;
         case 4:
         case 6:
         case 9:
         case 11:
-            return "30 days";
+            return 30;
         case 2:
-            return "28 days";
+            return 28;
         default:
             return "Invalid month";
     }
 }
 
-console.log(daysInMonth(2));
+console.log(daysInMonth(5));
 
 // Part 3
 console.log("Part 3");
