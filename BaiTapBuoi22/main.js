@@ -1,41 +1,41 @@
 // Part 1
 console.log("Part 1");
 
-function classifyStudent(studentScore) {
-    // if (studentScore < 0 || studentScore > 10) {
-    //     return "Invalid score";
-    // } else if (studentScore >= 9) {
-    //     return "Excellent";
-    // } else if (studentScore >= 8) {
-    //     return "Very Good";
-    // } else if (studentScore >= 6.5) {
-    //     return "Good";
-    // } else if (studentScore >= 5) {
-    //     return "Average";
-    // } else {
-    //     return "Weak";
-    // }
-    switch (true) {
-        case studentScore < 0 || studentScore > 10:
-            return "Invalid score";
-        case studentScore >= 9:
-            return "Excellent";
-        case studentScore >= 8:
-            return "Very Good";
-        case studentScore >= 6.5:
-            return "Good";
-        case studentScore >= 5:
-            return "Average";
-        default:
-            return "Weak";
+function getStudentLevel(studentScore) {
+    if (studentScore < 0 || studentScore > 10) {
+        return "Invalid score";
+    } else if (studentScore >= 9) {
+        return "Excellent";
+    } else if (studentScore >= 8) {
+        return "Very Good";
+    } else if (studentScore >= 6.5) {
+        return "Good";
+    } else if (studentScore >= 5) {
+        return "Average";
+    } else {
+        return "Weak";
     }
+    // switch (true) {
+    //     case studentScore < 0 || studentScore > 10:
+    //         return "Invalid score";
+    //     case studentScore >= 9:
+    //         return "Excellent";
+    //     case studentScore >= 8:
+    //         return "Very Good";
+    //     case studentScore >= 6.5:
+    //         return "Good";
+    //     case studentScore >= 5:
+    //         return "Average";
+    //     default:
+    //         return "Weak";
+    // }
 }
 
-console.log(classifyStudent(5));
+console.log(getStudentLevel(5));
 
 // Part 2
 console.log("Part 2");
-function daysInMonth(month) {
+function getDaysInMonth(month) {
     switch (month) {
         case 1:
         case 3:
@@ -57,30 +57,36 @@ function daysInMonth(month) {
     }
 }
 
-console.log(daysInMonth(5));
+console.log(getDaysInMonth(2));
 
 // Part 3
 console.log("Part 3");
-let n = 9;
-n % 2 === 0 ? console.log("Even") : console.log("Odd");
+function isEven(n) {
+    return n % 2 === 0;
+}
+let n = 10;
+const result = isEven(n) ? "Even" : "Odd";
+console.log(result);
 
 // Part 4
 console.log("Part 4");
-let ticketPrice = 100000;
-let age = 12;
-const finalPrice = age < 13 ? ticketPrice * 0.5  : ticketPrice;
-console.log(finalPrice);
+;
+function getTicketPriceByAge(ticketPrice, age) {
+    const finalPrice = age < 13 ? ticketPrice * 0.5 : ticketPrice;
+    return finalPrice;
+}
+console.log(getTicketPriceByAge(100000, 13));
 
 // Part 5
 console.log("Part 5");
-function celsiusToFahrenheit(celsius) {
+function toFahrenheit(celsius) {
     return celsius * 1.8 + 32;
 }
-console.log(celsiusToFahrenheit(20));
+console.log(toFahrenheit(20));
 
 // Part 6
 console.log("Part 6");
-function calculateElectricityBill(electricity) {
+function getElectricityBill(electricity) {
     if (electricity < 0) {
         return "Invalid value";
     } else if (electricity <= 50) {
@@ -94,5 +100,5 @@ function calculateElectricityBill(electricity) {
     }
 }
 
-console.log(calculateElectricityBill(142));
+console.log(getElectricityBill(142));
 
