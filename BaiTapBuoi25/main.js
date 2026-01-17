@@ -31,7 +31,7 @@ const orders = [
 
 function getTopRevenueProduct(products, orders) {
     let maxRevenue = 0;
-    let topProduct = null;
+    let topProduct;
 
     for (let i = 0; i < products.length; i++) {
         let revenue = 0;
