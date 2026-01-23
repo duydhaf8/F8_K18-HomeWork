@@ -109,8 +109,8 @@ deleteOrder(999);
 // SUCCESS
 // deleteOrder(order1.id);
 
-// Kiểm tra lại dữ liệu cuối cùng
-console.log("\n--- FINAL STATUS ---");
+
+console.log("FINAL STATUS");
 console.log("Products:", products);
 console.log("Orders:", orders);
 
