@@ -24,8 +24,12 @@ class PartTimeEmployee implements Employee {
     }
 }
 
-function calculateTotalSalary(employee: Employee): number {
-    return employee.getSalary();
+function calculateTotalSalary(employees: Employee[]): number {
+    let totalSalary = 0;
+    for (let emp of employees) {
+        totalSalary += emp.getSalary();
+    }
+    return totalSalary;
 }
 
 const fullTimeEmployee = new FullTimeEmployee();
@@ -38,7 +42,8 @@ partTimeEmployee.name = "Duy";
 partTimeEmployee.salary = 14;
 partTimeEmployee.hoursWorked = 2;
 
-console.log(calculateTotalSalary(fullTimeEmployee));
-console.log(calculateTotalSalary(partTimeEmployee));
+console.log(calculateTotalSalary([fullTimeEmployee]));
+console.log(calculateTotalSalary([partTimeEmployee]));
+
 
 
