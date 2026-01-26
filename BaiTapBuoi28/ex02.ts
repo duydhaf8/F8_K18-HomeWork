@@ -44,6 +44,7 @@ partTimeEmployee.hoursWorked = 2;
 
 console.log(calculateTotalSalary([fullTimeEmployee]));
 console.log(calculateTotalSalary([partTimeEmployee]));
+console.log(calculateTotalSalary([fullTimeEmployee, partTimeEmployee]));
 
 
 
