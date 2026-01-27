@@ -3,6 +3,7 @@ interface Employee {
     name: string
     salary: number
     getSalary(): number
+    // getSalary: () => number
 }
 
 class FullTimeEmployee implements Employee {

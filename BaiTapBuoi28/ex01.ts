@@ -13,9 +13,7 @@ const partTime: PartTime = {
 }
 
 const updatedPartTime: PartTime = {
-    id: 2,
-    name: "Binh",
-    salary: 20,
+    ...partTime,
     hoursWorked: 45
 }
 
