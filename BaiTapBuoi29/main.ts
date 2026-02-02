@@ -7,8 +7,7 @@ abstract class Employee {
         this.id = id;
         this.name = name;
         if (salary <= 0) {
-            console.log("Salary must be > 0");
-            return;
+            throw new Error("Salary must be > 0");
         }
         this.salary = salary;
     }
