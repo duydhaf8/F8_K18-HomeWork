@@ -30,8 +30,7 @@ abstract class Employee {
 
     setSalary(salary: number) {
         if (salary <= 0) {
-            console.log("Salary must be > 0");
-            return;
+            throw new Error("Salary must be > 0");
         }
         this.salary = salary;
     }
